@@ -1,0 +1,46 @@
+.clickerScore{
+	position: relative;
+	display: inline-block;
+	height: 100px;
+	width: 100px;
+	border-radius: 100%;
+	border: 2px solid steelblue;
+	margin-left: 5px;
+	margin-top: 5px;
+	text-align: center;
+  
+}
+#cuteCat2 {
+  height: 426px;
+  width:640px;
+}
+
+img{
+  border: 2px solid white;
+}
+h1 {
+  font-family: Arial;
+  color: steelblue;
+}
+
+h2 {
+  font-family: Arial;
+  font-size: 22px;
+  color: steelblue;
+  margin-bottom:0px;
+  margin-top:20px;
+}
+
+#score{
+  margin-top:3px;
+}
+
+.container {
+  display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+}

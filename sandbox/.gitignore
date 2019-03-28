@@ -1,0 +1,13 @@
+.idea
+logs_analysis/Ukasick.Aimee-logs_analysis_project.zip
+logs_analysis/newsdata.sql
+menu_web_app/restaurantmenu.db
+*.pyc
+*.db
+*.zip
+*.har
+oauth2/client_secret.json
+oauth2/fb_client_secret.json
+apis/*
+
+

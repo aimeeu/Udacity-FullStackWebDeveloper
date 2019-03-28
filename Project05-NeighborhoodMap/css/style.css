@@ -1,0 +1,98 @@
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Calibri", sans-serif;
+}
+
+/* Set the map height explicitly or the div shrinks when the places list only has a few entries. */
+#map {
+  height: 100%;
+  background-color: #222;
+  color: #fff;
+}
+
+.nav-bar {
+  background-color: #e3f5fa;
+}
+
+.title {
+    margin-left: 40px;
+    line-height: 40px;
+}
+
+#search-input {
+  margin: 10px 0px 20px 20px;
+  padding: 10px 80px 5px 10px;
+}
+
+.places {
+  margin: 10px 0px;
+  font-weight: bold;
+}
+
+.places:hover {
+  background-color: #42a5f5;
+}
+
+.title {
+  color: black;
+}
+
+.name,
+.category,
+.address,
+.information {
+  font-family: "Calibri", sans-serif;
+  color: #000;
+  font-weight: bold;
+}
+
+.info {
+  font-family: "Calibri", sans-serif;
+  color: #333;
+  font-weight: normal;
+}
+
+/* mobile */
+@media screen and (max-width: 480px) {
+  .navbar {
+    margin-bottom: 0px;
+  }
+
+  .main-title {
+    margin-top: 25px;
+    margin-left: 0px;
+    line-height: 0px;
+  }
+
+  #search-input {
+    margin: 10px 20px 0px 0px;
+    padding: 10px 80px 5px 10px;
+  }
+
+  #hk {
+    margin-left: 0px;
+    margin-bottom: 15px;
+    letter-spacing: 0.5px;
+  }
+
+  .buttons {
+    margin-top: 15px;
+  }
+}
+
+/* tablet */
+@media (min-width: 480px) and (max-width: 768px) {
+  #map {
+    height: 100%;
+    background-color: #222;
+    color: #fff;
+  }
+  .nav-bar {
+    background-color: #ecf0f1;
+    width: 50%;
+  }
+}

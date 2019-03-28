@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+<h1>New Menu Item</h1>
+
+<form action="{{url_for('new_menu_item', restaurant_id=restaurant_id )}}"
+      method='POST'>
+    <table>
+        <tr>
+            <td>Name:</td>
+            <td><input type='text' size='30' name='name' maxlength="30"
+                       required="true"/></td>
+        </tr>
+        <tr>
+            <td>Description:</td>
+            <td><textarea name='desc' maxlength="250"
+                          required="true"
+                          cols="50" rows="4"></textarea></td>
+        </tr>
+        <tr>
+            <td>Price:</td>
+            <td><input type='number' name='price' step='any'/></td>
+        </tr>
+    </table>
+
+
+    <input type='submit' value='Create'>
+
+</form>
+</body>
+</html>

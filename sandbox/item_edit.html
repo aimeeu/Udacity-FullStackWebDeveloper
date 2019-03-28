@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>udacity-project4-itemcatalog</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
+    <link rel="stylesheet" href="assets/css/Article-Clean.css">
+    <link rel="stylesheet" href="assets/css/Footer-Basic.css">
+    <link rel="stylesheet" href="assets/css/Navigation-with-Button.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <div id="navbar">
+        <nav class="navbar navbar-light navbar-expand-md navigation-clean-button">
+            <div class="container"><a class="navbar-brand" href="#">Project 4 - Item Catalog - Edit Item</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                <div
+                    class="collapse navbar-collapse" id="navcol-1"><span class="navbar-text actions"> <a class="btn btn-light action-button" role="button" href="#">Log In</a><a class="btn btn-light action-button" role="button" href="#">Log Out</a></span></div>
+    </div>
+    </nav>
+    </div>
+    <div>
+        <div class="container">
+            <form>
+                <div class="form-group">
+                    <div class="form-row">
+                        <div class="col-md-6 col-xl-2"><label class="col-form-label" id="lbl_title" for="title">Title:</label></div>
+                        <div class="col-md-6 col-xl-10"><input class="form-control" type="text" id="txt_fld_title" maxlength="100" value="{{movie.title}}" required="true" name="title"></div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-6 col-xl-2"><label class="col-form-label" id="lbl_category" for="dd_category">Category:</label></div>
+                        <div class="col-md-6 col-xl-10"><select class="form-control" id="dd_category" name="dd_category" required="true"><optgroup label="This is a group"><option value="12" selected="">This is item 1</option><option value="13">This is item 2</option><option value="14">This is item 3</option></optgroup></select></div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-6 col-xl-2"><label class="col-form-label" id="lbl_desc" for="desc">Description:</label></div>
+                        <div class="col-md-6 col-xl-10"><textarea class="form-control" id="txt_area_desc" required="true" maxlength="500" rows="4" name="desc"></textarea></div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-6 col-xl-2"><label class="col-form-label" id="lbl_poster_url" for="poster_url">Poster URL:</label></div>
+                        <div class="col-md-6 col-xl-10"><input class="form-control" type="url" id="input_poster_url" name="poster_url" required="true" value="{{movie.poster_img_url}}" maxlength="200"></div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-6 col-xl-2"><label class="col-form-label" id="lbl_trailer_url" for="trailer_url">Trailer URL:</label></div>
+                        <div class="col-md-6 col-xl-10"><input class="form-control" type="url" id="input_poster_url" name="poster_url" required="true" value="{{movie.poster_url}}" maxlength="200"></div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-6 col-xl-2"><label class="col-form-label" id="lbl_lst_updt_dt" for="last_update_dt">Last Update Date:</label></div>
+                        <div class="col-md-6 col-xl-10"><input class="form-control" type="date" id="lst_updt_dt" readonly="true" disabled="true" name="last_update_dt" value="{{movie.lst_update_dt}}"></div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-6 col-xl-2"><label class="col-form-label" id="lbl_lst_updt_by" for="last_update_by">Last Update By:</label></div>
+                        <div class="col-md-6 col-xl-10"><input class="form-control-plaintext" type="text" value="{{movie.lst_update_by}}" readonly="" id="fld_lst_updt_by"></div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-6 col-xl-2"></div>
+                        <div class="col-md-6 col-xl-10"><a href="#">Save</a><a href="#">Cancel</a></div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="footer-basic">
+        <footer>
+            <p class="copyright">Aimee Ukasick © 2018</p>
+        </footer>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
