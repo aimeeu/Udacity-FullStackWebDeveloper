@@ -18,13 +18,13 @@ URL of Hosted Web Application: http://18.211.87.104 (uses Github authorization)
 
 ### Lightsail Configuration
 
-![lightsail-main](/docs/lightsail-main.png)
+![lightsail-main](../docs/lightsail-main.png)
 
 1. Create/attach static IP
 
 2. Configure Lightsail firewall; note: I enabled https in case I want to install an SSL certificate in the future.
 
-	![project6-networking](/docs/project6-networking.png)
+	![project6-networking](../docs/project6-networking.png)
 
 ## Summary of Software Installed
 - aptitude
@@ -283,7 +283,7 @@ ubuntu@ip-172-26-1-224:/var/www/catalog$ sudo systemctl reload apache2
 ```
 #### Test the Catalog Application
 
-![app-running](/docs/app-running.png)
+![app-running](../docs/app-running.png)
 
 ## Third-Party Resources Used For This Project
 
