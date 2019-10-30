@@ -129,8 +129,8 @@ Install and Run
 
 Open your browser and access ``http://localhost:5000``.
 
-Flows
-=====
+Test Required Functionality
+===========================
     .. note::
 
         The images contain records I created while testing
