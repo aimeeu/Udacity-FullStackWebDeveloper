@@ -26,8 +26,17 @@ Future iterations of this project will include proper error handling, logging, a
 
 This README file is in RST format for two reasons: 1) I know rST markup because I'm the Docs PTL for Acumos, an Open Source project under the Linux Foundation's Deep Learning umbrella; and 2) rST is a much better choice if the goal is to publish documentation on `ReadTheDocs <https://readthedocs.org/>`_.
 
+Object Model
+------------
+There are four objects, which equates to four database tables. All inherit from flask_sqlalchemy.SQLAlchemy.Model. See the `docs <http://flask-sqlalchemy.pocoo.org/2.3/models/>`_ for more on creating object models.
+
+* User - basic user info; also extends `flask_login.UserMixin <https://flask-login.readthedocs.io/en/latest/_modules/flask_login/mixins.html#UserMixin>`_
+* OAuth - provider info; extends flask_dance.consumer.backend.sqla.OAuthConsumerMixin
+* Catagory - name, id
+* Movie - id, title, description, poster URL, trailer URL
+
 Project Structure
------------------
+=================
 
     .. image:: docs/project-dir.png
        :width: 75%
@@ -52,7 +61,7 @@ Project Structure
     * ``Pipfile`` - file used by pipenv to create the virtual environment needed to run the application
 
 Third-Party Authentication
---------------------------
+==========================
 I decided to use Flask-Dance with Github, since Github seems to be the least complicated of the providers that Flask-Dance supports. Follow the Flask-Dance `instructions <https://flask-dance.readthedocs.io/en/latest/quickstarts/github.html>`_ for setting up your application for Github authentication.
 
 Note that Github requires HTTPS, so for development you will need to ``export OAUTHLIB_INSECURE_TRANSPORT=1`` or modify your IDE's RUN configuration.
@@ -61,16 +70,6 @@ Note that Github requires HTTPS, so for development you will need to ``export OA
 
     .. image:: docs/pycharm.png
        :width: 75%
-
-Object Model
-------------
-There are four objects, which equates to four database tables. All inherit from flask_sqlalchemy.SQLAlchemy.Model. See the `docs <http://flask-sqlalchemy.pocoo.org/2.3/models/>`_ for more on creating object models.
-
-* User - basic user info; also extends `flask_login.UserMixin <https://flask-login.readthedocs.io/en/latest/_modules/flask_login/mixins.html#UserMixin>`_
-* OAuth - provider info; extends flask_dance.consumer.backend.sqla.OAuthConsumerMixin
-* Catagory - name, id
-* Movie - id, title, description, poster URL, trailer URL
-
 
 Installation
 ============
