@@ -8,23 +8,23 @@ I based this project on the Movie Trailer project, which was the first project i
 
 Design - Front End
 ==================
-The very simple web pages were created using Bootstrap 4.1. I am **so** not a web designer!
+I created the web pages using Bootstrap 4.1.
 
 Design - Back End
 =================
-The coursework and example code provided by Udacity is outdated, convoluted, and not PEP8 compliant. I have basic Python skills from contributing to OpenStack and from completing the AI Programming with Python nanodegree. I decided to use my previous experience as a Java developer to create a better Python application than the Udacity example. I researched how to implement functionality in a `Flask <http://flask.pocoo.org/>`_ application, which led to `Flask-Dance <https://github.com/singingwolfboy/flask-dance>`_, `Flask-Login <https://flask-login.readthedocs.io/en/latest/>`_, and `Flask-SQLAlchemy <http://flask-sqlalchemy.pocoo.org/>`_. For reference, I used framework documentation and YouTube tutorials:
+The example code provided by Udacity is outdated, convoluted, and not PEP8 compliant. I decided to use my previous Java development experience to create a better Python application than the Udacity example. I researched how to implement functionality in a `Flask <http://flask.pocoo.org/>`_ application and decided to use `Flask-Dance <https://github.com/singingwolfboy/flask-dance>`_, `Flask-Login <https://flask-login.readthedocs.io/en/latest/>`_, and `Flask-SQLAlchemy <http://flask-sqlalchemy.pocoo.org/>`_. I used the following YouTube tutorials as reference:
 
 * `PrettyPrinted <https://prettyprinted.com/>`_
 * `The Flask Mega-Tutorial <https://blog.miguelgrinberg.com/index>`_
 * `RealPython <https://realpython.com/>`_
 
-Flask-Dance and Flask-Login combine to provide third-party authentication and login session management.
+Using both Flask-Dance and Flask-Login provides third-party authentication and login session management.
 
-Based on my experience with Java's `Hibernate <http://hibernate.org/>`_ ORM many years ago, I looked for an ORM that was more robust than SQLAlchemy. I decided to use Flask-SQLAlchemy, because I didn't need to do multiple queries or write a view to retrieve a Movie and its associated Category.
+Based on my experience with Java's `Hibernate <http://hibernate.org/>`_ ORM, I looked for an ORM that was more robust than SQLAlchemy. I decided to use Flask-SQLAlchemy, because I didn't need to do multiple queries or write a view to retrieve a Movie and its associated Category.
 
 Future iterations of this project will include proper error handling, logging, and unit tests.
 
-This README file is in RST format for two reasons: 1) I know rST markup because I'm the Docs PTL for Acumos, an Open Source project under the Linux Foundation's Deep Learning umbrella; and 2) rST is a much better choice if the ultimate aim is to publish documentation on `ReadTheDocs <https://readthedocs.org/>`_.
+This README file is in RST format for two reasons: 1) I know rST markup because I'm the Docs PTL for Acumos, an Open Source project under the Linux Foundation's Deep Learning umbrella; and 2) rST is a much better choice if the goal is to publish documentation on `ReadTheDocs <https://readthedocs.org/>`_.
 
 Project Structure
 -----------------
