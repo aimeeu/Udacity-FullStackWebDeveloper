@@ -77,7 +77,7 @@ Installation
 Prerequisites
 -------------
 * Python 3.6
-* Ensure you have `pipenv <https://pipenv.readthedocs.io/>`_ installed
+*  `pipenv <https://pipenv.readthedocs.io/>`_
 
 
 Install and Run
