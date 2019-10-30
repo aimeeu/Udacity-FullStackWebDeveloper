@@ -148,7 +148,7 @@ Unauthenticated users may access the Home and View Details pages.
     .. image:: docs/movies-json.png
        :width: 75%
 
-**View Movie Details - Not Logged In**
+**View Movie Details - User Not Authenticated**
 
     .. image:: docs/movie-detailsNotLoggedIn.png
        :width: 75%
@@ -165,8 +165,8 @@ Clicking **Github Log In** redirects the user to the Github oauth page.
 
 Click **authorize** to authenticate via Github. The application then processes the authentication, creates User and OAuth records if they don't exist, and logs the user into the app.
 
-Home Page View - Logged In
-..........................
+Home Page View - User Authenticated
+...................................
 
     .. image:: docs/home-loggedIn.png
        :width: 75%
