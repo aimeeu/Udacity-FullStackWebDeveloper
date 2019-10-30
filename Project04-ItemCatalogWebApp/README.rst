@@ -134,7 +134,7 @@ Flows
 =====
     .. note::
 
-        The images contain records created after I had been testing app functionality
+        The images contain records I created while testing
 
 Unauthenticated Users
 ---------------------
@@ -164,7 +164,7 @@ Clicking **Github Log In** redirects the user to the Github oauth page.
     .. image:: docs/github-auth.png
        :width: 75%
 
-Click authorize to authenticate via Github. The application then processes the authentication, creates User and OAuth records if they don't exist, and logs the user into the app.
+Click **authorize** to authenticate via Github. The application then processes the authentication, creates User and OAuth records if they don't exist, and logs the user into the app.
 
 Home Page View - Logged In
 ..........................
@@ -177,9 +177,9 @@ Home Page View - Logged In
 3. Categories: all categories are listed; clicking a category link displays the movies for that category
 4. Selecting **All Categories Recent Movies** loads the 10 most recently modified movies on the right; the column header changes to display the selected category
 5. **Click the movie's title** to view details
-6. Click **Edit** to edit the movie's details; **note**: only visible if the logged-in user is the person who created the movie record
-7. Click **Delete** to edit the movie's details; **note**: only visible if the logged-in user is the person who created the movie record
-8. Click **Add Movie** to add a new movie; **note**: only visible if the user is logged in
+6. Click **Edit** to edit the movie's details; **note**: only visible if the authenticated user is the person who created the movie record
+7. Click **Delete** to edit the movie's details; **note**: only visible if the authenticated user is the person who created the movie record
+8. Click **Add Movie** to add a new movie; **note**: only visible if the user is authenticated
 9. Click **Home** to return to the Home page
 10. Click **Movies JSON** to display a JSON list of all movies in the database; opens in a new tab
 
