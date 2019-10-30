@@ -2,7 +2,7 @@
 ===========================================================
 Udacity Full Stack Web Developer - Project 4 - Item Catalog
 ===========================================================
-This project was developed using Python 3.6, Pipenv, and Pycharm 2018.2.4 on Ubuntu 18.04 LTS.
+I developed this project using Python 3.6, Pipenv, and Pycharm 2018.2.4 on Ubuntu 18.04 LTS.
 
 I based this project on the Movie Trailer project, which was the first project in this nanodegree.
 
@@ -12,15 +12,19 @@ The very simple web pages were created using Bootstrap 4.1. I am **so** not a we
 
 Design - Back End
 =================
-The coursework and example code provided by Udacity is woefully outdated and needlessly convoluted, not to mention the instructor code isn't PEP8 compliant. I have only basic Python exposure from fixing low-handing-fruit bugs and reviewing code in OpenStack and additionally from completing the AI Programming with Python nanodegree in May, 2018. I haven't done any Java or Objective-C development since 2013, but I do remember enough to know that there are better ways to write code. I started googling for how to implement various functionality in a `Flask <http://flask.pocoo.org/>`_ application, which eventually led to `Flask-Dance <https://github.com/singingwolfboy/flask-dance>`_, `Flask-Login <https://flask-login.readthedocs.io/en/latest/>`_, and `Flask-SQLAlchemy <http://flask-sqlalchemy.pocoo.org/>`_. Framework documentation, YouTube tutorials by `PrettyPrinted <https://prettyprinted.com/>`_, `The Flask Mega-Tutorial <https://blog.miguelgrinberg.com/index>`_, and tutorials on `RealPython <https://realpython.com/>`_ were very helpful.
+The coursework and example code provided by Udacity is outdated, convoluted, and not PEP8 compliant. I have basic Python skills from contributing to OpenStack and from completing the AI Programming with Python nanodegree. I decided to use my previous experience as a Java developer to create a better Python application than the Udacity example. I researched how to implement functionality in a `Flask <http://flask.pocoo.org/>`_ application, which led to `Flask-Dance <https://github.com/singingwolfboy/flask-dance>`_, `Flask-Login <https://flask-login.readthedocs.io/en/latest/>`_, and `Flask-SQLAlchemy <http://flask-sqlalchemy.pocoo.org/>`_. For reference, I used framework documentation and YouTube tutorials:
 
-Flask-Dance and Flask-Login combine to provide third-party authentication and subsequent login session management.
+* `PrettyPrinted <https://prettyprinted.com/>`_
+* `The Flask Mega-Tutorial <https://blog.miguelgrinberg.com/index>`_
+* `RealPython <https://realpython.com/>`_
 
-From my experience with Java's `Hibernate <http://hibernate.org/>`_ ORM many years ago, I was looking for an ORM a little more robust than straight SQLAlchemy, which led me to Flask-SQLAlchemy. With Flask-SQLAlchemy, I don't have to do multiple queries or write a view to retrieve a Movie and its associated Category.
+Flask-Dance and Flask-Login combine to provide third-party authentication and login session management.
+
+Based on my experience with Java's `Hibernate <http://hibernate.org/>`_ ORM many years ago, I looked for an ORM that was more robust than SQLAlchemy. I decided to use Flask-SQLAlchemy, because I didn't need to do multiple queries or write a view to retrieve a Movie and its associated Category.
 
 Future iterations of this project will include proper error handling, logging, and unit tests.
 
-This README file is in RST format for two reasons: 1) I'm the Docs PTL for Acumos, an Open Source project under the Linux Foundation's Deep Learning umbrella, so I know RST markup fairly well; and 2) RST is a much better choice if the ultimate aim is to publish documentation on `ReadTheDocs <https://readthedocs.org/>`_.
+This README file is in RST format for two reasons: 1) I know rST markup because I'm the Docs PTL for Acumos, an Open Source project under the Linux Foundation's Deep Learning umbrella; and 2) rST is a much better choice if the ultimate aim is to publish documentation on `ReadTheDocs <https://readthedocs.org/>`_.
 
 Project Structure
 -----------------
@@ -160,7 +164,7 @@ Clicking **Github Log In** redirects the user to the Github oauth page.
     .. image:: docs/github-auth.png
        :width: 75%
 
-Click authorize to authenticate via Github. The application then processes the authentication: creates User and OAuth records if they don't exists and logs the user into the app.
+Click authorize to authenticate via Github. The application then processes the authentication, creates User and OAuth records if they don't exist, and logs the user into the app.
 
 Home Page View - Logged In
 ..........................
@@ -191,7 +195,7 @@ View Movie Details
        :width: 75%
 
 1. Click **Trailer** to open a new tab and watch the trailer
-2. Click **Edit** to edit details; click **Delete** to delete the movie; both Edit and Delete redirect to new pages; **note**: Edit and Delete are only visible is the user is authenticated and also the creator of the movie record
+2. Click **Edit** to edit details; click **Delete** to delete the movie; both **Edit** and **Delete** redirect to new pages; **note**: **Edit** and **Delete** are only visible to an authenticated user who is also the creator of the movie record
 3. Click **JSON** to open a new tab that displays the movie data in JSON format
 
     .. image:: docs/movie-json.png
@@ -205,14 +209,14 @@ Edit Movie Details
 
 All fields are required, as specified by ``required="true"`` in the form fields. Click the **Submit** button to save changes.
 
-**Security risk**: no fields are sanitized before being added to the database, which leaves this open to scripting attacks.
+**Security risk**: no fields are sanitized before being added to the database, which leaves this application open to scripting attacks.
 
-**Field validation**: neither URL field is validated for a reachable at this time; in future, use RFC3987 and Regex libraries for this
+**Field validation**: neither URL field is validated at this time; in future, use RFC3987 and Regex libraries for this
 
     .. image:: docs/movie-updatedMsg.png
        :width: 75%
 
-After submitting the form, the user is taken back to the Home page, where a success message is displayed.
+After submitting the form, you return to the Home page, where a success message is displayed.
 
 Add Movie
 .........
@@ -226,7 +230,7 @@ All fields are required, as specified by ``required="true"`` in the form fields.
     .. image:: docs/movie-addMsg.png
        :width: 75%
 
-After submitting the form, the user is taken back to the Home page, where a success message is displayed.
+After submitting the form, you return to the Home page, where a success message is displayed.
 
 Delete Movie
 ............
@@ -236,7 +240,7 @@ Select **Delete** from either the Home page or View Movie page.
        :width: 75%
 
 
-A confirmation page is presented. Press **Delete**. You will be redirected to the Home page.
+Press **Delete** on the confirmation page. You then return to the Home page.
 
 
     .. image:: docs/movie-deleteMsg.png
