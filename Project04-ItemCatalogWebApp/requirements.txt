@@ -1,7 +1,7 @@
 # this was generated with pipenv lock -r
 
 blinker==1.4
-certifi==2018.10.15
+certifi==2022.12.7
 chardet==3.0.4
 click==7.0
 flask-dance==1.1.0
